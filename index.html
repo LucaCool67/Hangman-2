@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="hang.css"></link>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <h4 id="attemptsDisplay">Your Attempts: </h4>
+    <h4 class="h">Attempts Highscore: </h4>
+
+    <button type="button" onclick="play()" id="play">Play</button>
+    <div class="hangman-container">
+        <h1 class="word-display">_ _ _ _ _ _ _</h1>
+        <h2 id="win-lose"></h2>
+    </div>
+    <input type="text" class="guess-input" placeholder="Put Your Guess in Here">
+    <button type="submit" onclick="submitGuess()">Submit</button>
+    <div class="submit-container">
+        <button type="submit" onclick="submitDone()" class="done">Submit Done</button>
+    </div>
+    
+    <div class="guesses">
+        <h4 class="attemptedGuesses"></h4>
+    </div>
+    
+    <script src="hang.js"></script>
+</body>
